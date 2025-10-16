@@ -112,6 +112,7 @@ python query_data.py "O que diz o código de ética sobre conflitos de interesse
 
 ### 1. **Processamento de Documentos** (`populate_db.py`)
 ```mermaid
+graph LR
 A[PDFs] --> B[Carregamento]
 B --> C[Divisão em Chunks]
 C --> D[Geração de Embeddings]
@@ -120,6 +121,7 @@ D --> E[Armazenamento ChromaDB]
 
 ### 2. **Sistema de Consulta** (`query_data.py`)
 ```mermaid
+graph LR
 A[Pergunta] --> B[Embedding da Pergunta]
 B --> C[Busca Similaridade]
 C --> D[Recuperação Contexto]
